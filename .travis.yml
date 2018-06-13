@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - --lts # LTS
+  - node # Current
+before_install:
+  # Install meteor
+  - curl https://install.meteor.com | /bin/sh
+  - export PATH=$HOME/.meteor:$PATH
+cache:
+  directories:
+    - $HOME/.npm
